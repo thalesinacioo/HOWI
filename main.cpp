@@ -7,41 +7,41 @@
 
 #include <iostream>
 #include <locale.h>
-#include <stdlib.h>    //bibliotecas para funcionamento do cÃ³digo
+#include <stdlib.h>    //bibliotecas para funcionamento do código
 
 using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "Portuguese"); //corrigir acentos
+	setlocale (LC_ALL, "Portuguese"); //corrigir acentos
 	int escolha = 0;//declarando variavel chamada escolha
 	bool executa = true;
-	int bin[8]; //definindo um valor inteiro de 8 posiÃ§Ãµes a ser utilizado no calculo decimal [1]
+	int bin[8]; //definindo um valor inteiro de 8 posições a ser utilizado no calculo decimal [1]
 	int decimal; //variavel
 	while (executa) //enquanto executa
 	{
 	//escrevendo na tela este bloco
 		cout <<"********************* " << endl;
-		cout <<"CONVERSOR DE NÃšMEROS"   << endl;
+		cout <<"CONVERSOR DE NÚMEROS"   << endl;
 		cout <<"********************* " << endl;
 		cout << endl; //quebra de linha
-		cout <<"ESCOLHA UMA OPÃ‡ÃO:" << endl;
+		cout <<"ESCOLHA UMA OPÇÃO:" << endl;
 		cout << endl; //quebra de linha
-		cout <<"[1 - DECIMAL PAPA BINARIO] " << endl;
-		cout <<"[2 - BINÃRIO PARA DECIMAL]" << endl;
+		cout <<"[1 - DECIMAL PAPA BINÁRIO] " << endl;
+		cout <<"[2 - BINÁRIO PARA DECIMAL]" << endl;
 		cout <<"[0 - SAIR] " << endl;
 		cout << endl; //quebra de linha
-		
+
 		cin >> escolha; //pegando o numero escolhido das opcoes acima e tratando de acordo com a formula abaixo escrita com o switch
 		switch (escolha)
 		{
-			case 1: //aqui ele identifica que Ã© o numero 1, e faz o calculo abaixo
+			case 1: //aqui ele identifica que é o numero 1, e faz o calculo abaixo
 				cout << endl; //quebra de linha
 				cout << "Digite o valor em decimal: " << endl;
 				cout << endl; //quebra de linha
 				cin >> decimal;
 				cout << endl; //quebra de linha
-				cout << "O valor em decimal Ã©:" << endl;
+				cout << "O valor em decimal é:" << endl;
 				cout << endl; //quebra de linha
 				for (int i = 7; i >= 0; i--)
 				{
@@ -60,26 +60,26 @@ int main()
 				}
 				cout << endl; //quebra de linha
 				cout << endl; //quebra de linha
-				
+
 				break;
-			
+
 			case 2:
 				cout << endl; //quebra de linha
 				cout << "Digite o valor em binario: " << endl;
-				
-				
-				
+
+
+
 				break;
-			
+
 			case 0:
-				
+
 				executa = false;
 				break;
-				
+
 			default:
-				cout << "Digite um valor vÃ¡lido." << endl;
+				cout << "Digite um valor válido." << endl;
 				break;
 		}
 	}
-	
+
 }
